@@ -1,4 +1,3 @@
-
 resource "aws_iam_role" "lambda_role" {
   name = "lambda_ec2_management_role"
 

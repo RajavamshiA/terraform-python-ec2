@@ -11,7 +11,6 @@ resource "aws_spot_instance_request" "workstation" {
   }
 }
 
-
 resource "aws_ec2_tag" "name" {
   resource_id = aws_spot_instance_request.workstation.spot_instance_id
   key         = "Name"
