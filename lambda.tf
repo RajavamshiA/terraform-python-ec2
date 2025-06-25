@@ -12,7 +12,7 @@ data "archive_file" "ec2_auto_stop_zip" {
 
 resource "aws_lambda_function" "ec2_auto_start" {
   function_name = "EC2AutoStart"
-  handler       = "ec2_auto_start.lambda_handler"
+  handler       = "ec2_auto_start.lambda_handler"       
   role          = aws_iam_role.lambda_role.arn
   runtime       = "python3.12"
 
