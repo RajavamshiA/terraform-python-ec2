@@ -8,7 +8,7 @@ github_token = config['github_token']
 user_name = 'learninguser'
 HEADERS = {'Authorization': f'token {github_token}'} # {'Authorization': 'token ' + github_token}
 
-def list_repos(user_name):
+def list_repos(user_name):      
     """
     Lists all repositories for the given GitHub account with pagination.
     """
