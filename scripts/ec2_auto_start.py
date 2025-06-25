@@ -11,7 +11,7 @@ def start_instances_by_tag(tags, region):
     
     try:
         paginator = ec2.get_paginator('describe_instances')
-        page_iterator = paginator.paginate(Filters=tag_filters)    
+        page_iterator = paginator.paginate(Filters=tag_filters)
         
         instances = []
         for page in page_iterator:
