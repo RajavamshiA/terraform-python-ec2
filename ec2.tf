@@ -8,7 +8,7 @@ resource "aws_spot_instance_request" "workstation" {
   tags = {
     Name = "workstation"
     Environment = "dev"
-  }
+  }       
 }
 
 resource "aws_ec2_tag" "name" {
