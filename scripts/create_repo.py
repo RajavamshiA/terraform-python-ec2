@@ -5,7 +5,7 @@ from dotenv import dotenv_values
 config = dotenv_values(".env")
 
 # Configuration
-github_token = config['github_token']
+github_token = config['github_token']       
 user_name = 'learninguser'
 repo_name = 'terraform-python-ec2'
 description = 'This repo is to discuss about python usecases'
