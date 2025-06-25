@@ -12,7 +12,7 @@ resource "aws_cloudwatch_event_rule" "ec2_auto_start_rule" {
   schedule_expression = "cron(38 15 ? * SAT-SUN *)" # 8 AM UTC, Monday to Friday
 }
 
-resource "aws_cloudwatch_event_target" "ec2_auto_stop_target" {
+resource "aws_cloudwatch_event_target" "ec2_auto_stop_target" {       
   rule      = aws_cloudwatch_event_rule.ec2_auto_stop_rule.name
   target_id = "EC2AutoStopLambda"
   arn       = aws_lambda_function.ec2_auto_stop.arn
