@@ -28,7 +28,7 @@ payload = {
 # Make the request to create a repository
 response = requests.post(url, headers=headers, data=json.dumps(payload))
 
-# Check the response
+# Check the response        
 if response.status_code == 201: # 201, created. it means success
     print(f'Repository {repo_name} created successfully within {user_name}.')
     print(f'Repository URL: {response.json()["html_url"]}')
